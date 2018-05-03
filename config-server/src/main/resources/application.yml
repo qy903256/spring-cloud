@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/qy903256/spring-cloud
+          searchPaths: respo
+#          username: 公开库不用填写
+#          password: 公开库不用填写
+server:
+  port: 8888
+
