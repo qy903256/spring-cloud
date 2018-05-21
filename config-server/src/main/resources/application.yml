@@ -7,9 +7,12 @@ spring:
       server:
         git:
           uri: https://github.com/qy903256/spring-cloud
-          searchPaths: respo
+          searchPaths: config-repo
 #          username: 公开库不用填写
 #          password: 公开库不用填写
 server:
   port: 8888
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
