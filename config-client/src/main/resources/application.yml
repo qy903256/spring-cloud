@@ -5,15 +5,17 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
+#      uri: http://localhost:8888/
       discovery:
         enabled: true
         erviceId: config-server
+    bustrace:
+      enabled: true
   rabbitmq:
-    host: localhost
+    host: 127.0.0.1
     port: 5672
-#   username:
-#   password:
+    username: admin
+    password: 123456
 eureka:
   client:
     serviceUrl:
